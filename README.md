@@ -8,20 +8,31 @@ Link para o vídeo: https://drive.google.com/file/d/1sB6IGUxComIGgOEYKJl5whF8nUM
 make install
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 Ira instalar o componentes necessarios para rodar o código
 
 '''
 
 make runRNN
+
 '''
+
 Ira  rodar o código RNN
+
 '''
+
 make runLSTM
+
 '''
+
 Ira  rodar o código LSTM
+
 '''
+
 make runGRU
+
 '''
+
 Ira  rodar o código GRU
 
-''''''''''''''''''''''''''''''''''''
+'''''''''
