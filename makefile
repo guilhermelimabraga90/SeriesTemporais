@@ -1,4 +1,4 @@
-.PHONY: install2
+.PHONY: install
 install: ## Install Python requirements.
 	pip install tensorflow
 	pip install sklearn
