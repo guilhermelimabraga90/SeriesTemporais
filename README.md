@@ -3,8 +3,10 @@ Os códigos nesse git servem para prever as ações da impresa AAL,  utilizando 
 '''
 Link para o vídeo: https://drive.google.com/file/d/1sB6IGUxComIGgOEYKJl5whF8nUMoGtu1/view?usp=sharing
 
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 make install
+
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Ira instalar o componentes necessarios para rodar o código
 
