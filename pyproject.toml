@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "seriestemporais"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tensorflow = "^2.16.1"
+scikit-learn = "^1.4.2"
+matplotlib = "^3.8.4"
+pandas = "^2.2.2"
+seaborn = "^0.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+autoflake = "^2.3.1"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
