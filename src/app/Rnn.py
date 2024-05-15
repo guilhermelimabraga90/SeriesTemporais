@@ -5,7 +5,7 @@ from keras.layers import Dense, Dropout, SimpleRNN
 from keras.models import Sequential
 from sklearn.preprocessing import MinMaxScaler
 
-data = pd.read_csv("scr/csv/all_stocks_5yr.csv")
+data = pd.read_csv("./src/csv/all_stocks_5yr.csv", sep=";")
 
 df = data[data["Name"] == "AAL"]
 

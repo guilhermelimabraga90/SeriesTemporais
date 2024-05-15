@@ -5,7 +5,7 @@ from keras.layers import LSTM, Dense, Dropout
 from keras.models import Sequential
 from sklearn.preprocessing import MinMaxScaler
 
-data = pd.read_csv("scr/csv/all_stocks_5yr.csv")
+data = pd.read_csv("./src/csv/all_stocks_5yr.csv", sep=";")
 
 df = data[data["Name"] == "AAL"]
 
@@ -22,7 +22,7 @@ def plot_predictions(test, predicted):
 
 df = data[data["Name"] == "AAL"]
 
-df["date"] = pd.to_datetime(df["date"])
+df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
 
 df = df.set_index("date")
 
@@ -30,6 +30,8 @@ df.head()
 
 train = df[:"2016"].iloc[:, 1:2].values
 test = df["2017":].iloc[:, 1:2].values
+
+df["close"] = df["close"].astype(float)
 
 df["close"][:"2016"].plot(figsize=(16, 4), legend=True)
 df["close"]["2017":].plot(figsize=(16, 4), legend=True)
